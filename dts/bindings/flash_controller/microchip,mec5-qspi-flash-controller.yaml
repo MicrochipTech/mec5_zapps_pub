@@ -1,0 +1,42 @@
+# Copyright (c) 2025 Microchip Technology Inc.
+# SPDX-License-Identifier: Apache-2.0
+
+description: Microchip MEC5 flash driver using QSPI controller
+
+compatible: "microchip,mec5-qspi-flash-controller"
+
+include: [flash-controller.yaml, pinctrl-device.yaml]
+
+bus: qspi
+
+properties:
+  interrupts:
+    required: true
+
+  pinctrl-0:
+    required: true
+
+  pinctrl-names:
+    required: true
+
+  qspi-frequency:
+    type: int
+    required: true
+    description: |
+      Default frequency in Hz for both chip selects. The flash device child nodes
+      can override this value.
+
+  signal-mode:
+    type: string
+    enum:
+      - "SPI_MODE_0"
+      - "SPI_MODE_1"
+      - "SPI_MODE_2"
+      - "SPI_MODE_3"
+    description:
+      SPI signalling mode specifying idle state of SPI clock and the clock edges
+      for driving transmit data and sampling receive data. The default mode is SPI_MODE_0.
+
+      For SPI Modes 0 and 3 the controller samples receive data on the clock rising edge
+      and transmit data is driven on the clock falling edge. Mode 0 idle clock state is low
+      whereas Mode 3 idle clock state is high.
