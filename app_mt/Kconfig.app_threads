@@ -1,0 +1,53 @@
+# Copyright (c) 2025 Microchip Technology Inc.
+# SPDX-License-Identifier: Apache-2.0
+#
+# Kconfig.app_threads
+# Zephyr thread parameters
+#
+
+config USE_APP_THREAD1
+	bool "Enable application thread 1"
+	default y
+
+config USE_APP_THREAD2
+	bool "Enable application thread 2"
+	default y
+
+if USE_APP_THREAD1
+
+config APP_THREAD1_STACK_SIZE
+	int "Thread 1 stack size in bytes"
+	default 1024
+	help
+	  Application thread 1 stack size in bytes.
+	  Default is 1024. Minimum is 256.
+
+config APP_THREAD1_PRIORITY
+	int "Thread 1 priority"
+	default 5
+	help
+	  Application thread 1 default priority.
+	  Default is 5. Zephyr thread priorities can be negative or postive.
+	  Numerically lower priorities take precedence over numerically higher values.
+
+endif # USE_APP_THREAD1
+
+if USE_APP_THREAD2
+
+config APP_THREAD2_STACK_SIZE
+	int "Thread 2 stack size in bytes"
+	default 1024
+	help
+	  Application thread 2 stack size in bytes.
+	  Default is 1024. Minimum is 256.
+
+config APP_THREAD2_PRIORITY
+	int "Thread 2 priority"
+	default 7
+	help
+	  Application thread 2 default priority.
+	  Default is 7. Zephyr thread priorities can be negative or postive.
+	  Numerically lower priorities take precedence over numerically higher values.
+
+endif # USE_APP_THREAD2
+
