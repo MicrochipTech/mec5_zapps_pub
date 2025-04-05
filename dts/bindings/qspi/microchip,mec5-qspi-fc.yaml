@@ -1,0 +1,34 @@
+# Copyright (c) 2020, Linaro limited
+# Copyright (c) 2025, Microchip Technology Inc.
+# SPDX-License-Identifier: Apache-2.0
+
+description: |
+    Microchip QSPI flash controller device representation. A qspi node would typically
+    looks to this:
+
+        &qspi0 {
+            pinctrl-0 = <&quadspi_clk_pe10 &quadspi_ncs_pe11
+                         &quadspi_bk1_io0_pe12 &quadspi_bk1_io1_pe13
+                         &quadspi_bk1_io2_pe14 &quadspi_bk1_io3_pe15>;
+
+            status = "okay";
+        };
+
+compatible: "microchip,mec5-qspi-fc"
+
+include: [base.yaml, pinctrl-device.yaml]
+
+bus: qspi
+
+properties:
+  reg:
+    required: true
+
+  interrupts:
+    required: true
+
+  pinctrl-0:
+    required: true
+
+  pinctrl-names:
+    required: true
