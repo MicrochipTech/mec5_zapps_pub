@@ -1,0 +1,27 @@
+/*
+ * Copyright (c) 2025 Microchip Technology Inc.
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+#include <zephyr/dt-bindings/gpio/gpio.h>
+#include <zephyr/dt-bindings/gpio/microchip-xec-gpio.h>
+
+/*
+ * MEC5_ASSY6906 with MEC5200M-LJ part.
+ * JP6 2-3 GPIO074 (BSS_STRAP) pulled-down via 10K to ground selects
+ *   Boot-ROM load from Shared-SPI.
+ * JP7 No jumper
+ * JP23 14-15 selects GPIO055 as SHD_nCS0
+ * JP42 1-2 connects 1.8V
+ * JP60 2-3 VTR2 is powered by 1.8V
+ * NOTE: VTR3 is always 1.8V
+ *
+ * GPIO175/CMP_VOUT1/PWM8_ALT on schematic, LED4 on silkscreen.
+ */
+
+&uart1 {
+	current-speed = <115200>;
+	status = "okay";
+	pinctrl-0 = <&uart1_tx_gpio170 &uart1_rx_gpio171>;
+	pinctrl-names = "default";
+};
