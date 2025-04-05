@@ -1,0 +1,25 @@
+/*
+ * Copyright (c) 2025 Microchip Technology Inc.
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+#include <zephyr/dt-bindings/gpio/gpio.h>
+#include <zephyr/dt-bindings/gpio/microchip-xec-gpio.h>
+
+/* MEC5_ASSY6941 with MEC1723N-SZ part */
+
+&uart1 {
+	current-speed = <115200>;
+	status = "okay";
+	pinctrl-0 = <&uart1_tx_gpio170 &uart1_rx_gpio171>;
+	pinctrl-names = "default";
+};
+
+&dmac {
+	compatible = "microchip,mec5-dmac";
+	dma-channel-mask = <0xffff>;
+	status = "disabled";
+};
+
+#include "mec_ext_flash2.dtsi"
+

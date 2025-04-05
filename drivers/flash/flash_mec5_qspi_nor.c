@@ -323,19 +323,25 @@ static int flash_mec5_qspi_write(const struct device *flash_dev, off_t ofs,
 	return 0;
 }
 
-#if 0
-static int flash_mec5_qspi_erase(const struct device *dev, off_t offset, size_t size)
+static int flash_mec5_qspi_erase(const struct device *flash_dev, off_t offset, size_t size)
 {
-	const struct mec5_qspi_flash_nor_devcfg *devcfg = dev->config;
-	struct mec5_qspi_flash_nor_data *devdata = dev->data;
-	struct mec_qspi_regs *regs = devcfg->regs;
+	const struct mec5_qspi_flash_cfg *flash_cfg = flash_dev->config;
+	const struct device *ctrl_dev = flash_cfg->ctrl_dev;
+	const struct flash_mec5_qspi_ctrl_devcfg *ctrl_cfg = ctrl_dev->config;
+	struct mec_qspi_regs *regs = ctrl_cfg->regs;
+	int ret = 0;
+	uint8_t status = 0;
 
 	LOG_INF("MEC5 QSPI flash erase: offset=0x%0lx size=%u", offset, size);
-	LOG_INF("MEC5 QSPI flash erase: devcfg=%p devdata=%p regs=%p", devcfg, devdata, regs);
+	LOG_INF("MEC5 QSPI flash erase: flash_dev=%p ctrl_dev=%p", flash_dev, ctrl_dev);
+	LOG_INF("MEC5 QSPI flash erase: ctrl_cfg=%p regs=%p", ctrl_cfg, regs);
+
+	status = 0xffu;
+	ret = flash_qspi_read_status(flash_dev, 0, &status);
+	LOG_INF("MEC5 QSPI flash erase: read status 0 ret=(%d) status=0x%02x", ret, status);
 
 	return -ENOSYS;
 }
-#endif
 
 /* Get the size of the flash device.
  * Size is a constant for minimal and device tree build.
@@ -495,8 +501,8 @@ static int flash_mec5_init(const struct device *flash_dev)
 
 static DEVICE_API(flash, flash_mec5_qspi_driver_api) = {
 	.read = flash_mec5_qspi_read,
-	.write = NULL,
-	.erase = NULL,
+	.write = flash_mec5_qspi_write,
+	.erase = flash_mec5_qspi_erase,
 	.get_parameters = NULL,
 	.get_size = flash_mec5_qspi_get_size,
 #if defined(CONFIG_FLASH_PAGE_LAYOUT)

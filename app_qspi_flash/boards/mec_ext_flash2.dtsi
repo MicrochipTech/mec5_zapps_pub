@@ -1,0 +1,128 @@
+/*
+ * Copyright (c) 2025 Microchip Technology Inc.
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+#include <zephyr/dt-bindings/gpio/gpio.h>
+#include <zephyr/dt-bindings/gpio/microchip-xec-gpio.h>
+#include <zephyr/dt-bindings/pinctrl/mchp-xec-pinctrl.h>
+
+/*
+ * MEC5_ASSY6906 EVB with MEC172x or MEC520x
+ * Select VBAT
+ * JP36 ON, JP38 ON
+ * JP37 1-2 use +3.3V_STBY or coin cell battery (if present) for VBAT
+ *
+ * JP40 ON
+ * JP42 ON
+ * JP41 1-2, JP43 1-2, JP39 ON, JP44 ON. VCHIP_VTR_REG is +3.3V
+ * JP46 1-2, JP45 ON, JP47 ON. VCHIP_VTR_PLL is +3.3V
+ * JP51 1-2, JP50 ON, JP52 ON. VCHIP_VTR_ANALOG is +3.3V
+ * 
+ * Select VTR1 voltage +3.3V
+ * JP56 1-2, JP55 ON, JP57 ON
+ *
+ * Select VTR2 voltage
+ * JP59 ON, JP62 ON
+ * JP60 1-2 for +3.3V or 2-3 for +1.8V
+ *
+ * Select VTR3 voltage
+ * JP63 ON, JP66 ON
+ * JP65 1-2 for +1.8V
+ *
+ *-------------------------------------------------------------
+ * MEC5_ASSY6941 EVB with MEC174x, MEC175x, MEC540x, or MEC550x
+ * Select VBAT
+ * JP39 ON, JP41 ON
+ * JP161 1-2 use +3.3V_STBY or coin cell battery (if present) for VBAT
+ *
+ * JP43 ON
+ * JP45 ON
+ * J64 1-2, JP42 ON, JP47 ON. VCHIP_VTR_REG is +3.3V
+ * JP157 1-2, JP48 ON, JP50 ON. VCHIP_VTR_PLL is +3.3V
+ * JP158 1-2, JP53 ON, JP56 ON. VCHIP_VTR_ANALOG is +3.3V
+ *   
+ * Select VTR1 voltage +3.3V
+ * JP159 1-2, JP58 ON, JP60 ON
+ *
+ * Select VTR2 voltage
+ * JP62 ON, JP65 ON
+ * J68 1-2 for +3.3V or 2-3 for +1.8V
+ *
+ * Select VTR3 voltage
+ * JP66 ON, JP68 ON
+ * JP160 1-2 for +1.8V
+ *
+ * ------------------------------------------------------------------------
+ * Flash dongle Assembly 6791 has Winbond W25Q128JV +3.3V part
+ * Flash dongle using QSPI shared SPI pins which are on VTR2 voltage rail.
+ * NOTE: If W25Q128JV Quad-Enable STATUS2 bit is 1 then nWP and nHOLD
+ * signals are IO2/IO3. No write-protect or hold functionality.
+ *
+ * QSPI Shared SPI Port pins         ASSY6906(2x10)     ASSY6941(2x10)
+ *----------------------------       --------           ---------
+ * SHD_CS0# GPIO055 Func2 VTR2       J34-4              J18-4
+ * SHD_CS1# GPIO002 Func2 VTR2       J34-10             J18-10
+ * SHD_CLK  GPIO056 Func2 VTR2       J34-2              J18-2
+ * SHD_IO0  GPIO223 Func1 VTR2       J34-6              J18-6
+ * SHD_IO1  GPIO224 Func2 VTR2       J34-7              J18-7
+ * SHD_IO2  GPIO227 Func1 VTR2       J34-8              J18-8
+ * SHD_IO3  GPIO016 Func2 VTR2       J34-9              J18-9
+ *
+ * J34/J18 power rail selection      JP156              JP87
+ * 1-2 select VTR2.
+ * 2-3 select VTR1.
+ *
+ * Assembly 6791 has spots for up to four SPI flash devices with headers for each.
+ * Debug Header J6 2x4 for SPI flash connected to 1SPI_nCS0
+ * pin 1 +3.3V        pin 2 GND
+ * pin 3 1SPI_nCS0    pin 4 1SPI_CLK
+ * pin 5 1SPI_IO0     pin 6 1SPI_IO1
+ * pin 7 NC           pin 8 NC
+ * IO2 and IO3 were not connect to the debug headers ;<(
+ */
+
+/ {
+	aliases {
+		flash-ctrl = &qspi0;
+		spi-flash0 = &qspi_flash0;
+		spi-flash1 = &qspi_flash1;
+	};
+};
+
+&qspi0 {
+	compatible = "microchip,mec5-qspi-flash-controller";
+	pinctrl-0 = < &qspi_shd_cs0_n_gpio055 &qspi_shd_cs1_n_gpio002 &qspi_shd_clk_gpio056
+		      &qspi_shd_io0_gpio223 &qspi_shd_io1_gpio224
+		      &qspi_shd_io2_gpio227 &qspi_shd_io3_gpio016 >;
+	pinctrl-names = "default";
+	qspi-frequency = <DT_FREQ_M(1)>;
+	status = "okay";
+
+	qspi_flash0: qspi_flash@0 {
+		compatible = "microchip,mec5-qspi-nor-device";
+		/* w25q128jv 16 Mbit Flash */
+		reg = <0>; /* chip select 0 */
+		size = <(8 * 16 * 1024 * 1024)>;
+		qspi-max-frequency = <DT_FREQ_M(24)>;
+		jedec-id = [ef 40 18];
+		quad-enable-requirements = "S2B1v4";
+		page-size = <256>;
+		/* enter-4byte-addr = <?>; JESD216 BFP DW16 bits [31:24] */
+		status = "okay";
+	};
+
+	qspi_flash1: qspi_flash@1 {
+		compatible = "microchip,mec5-qspi-nor-device";
+		/* w25q128jv 16 Mbit Flash */
+		reg = <1>; /* chip select 1 */
+		size = <(8 * 16 * 1024 * 1024)>;
+		qspi-max-frequency = <DT_FREQ_M(24)>;
+		jedec-id = [ef 40 18];
+		quad-enable-requirements = "S2B1v4";
+		page-size = <256>;
+		status = "okay";
+	};
+};
+
