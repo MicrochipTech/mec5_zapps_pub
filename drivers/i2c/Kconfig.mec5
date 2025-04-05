@@ -6,16 +6,7 @@ config MCHP_MEC5_I2C_NL
 	default y
 	depends on DT_HAS_MICROCHIP_MEC5_I2C_NL_ENABLED
 	select EVENTS
-	help
-	  Enable this option to use the Microchip MEC5 I2C with Network Layer plus
-	  direct HAL DMA calls.
-
-config MCHP_MEC5_I2C_NL_ZD
-	bool "Microchip MEC5 I2C Network Layer driver using Zephyr DMA driver"
-	default y
-	depends on DT_HAS_MICROCHIP_MEC5_I2C_NL_ZD_ENABLED
 	select DMA
-	select EVENTS
 	help
-	  Enable this option to use the Microchip MEC5 I2C with Network Layer plus
-	  DMA using the Zephyr DMA driver for MEC5.
+	  Enable this option to use the Microchip MEC5 I2C with Network Layer
+	  plus DMA provided by the Zephyr DMA driver.

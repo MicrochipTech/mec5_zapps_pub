@@ -1,7 +1,7 @@
 # Copyright (c) 2025 Microchip Technology Inc.
 # SPDX-License-Identifier: Apache-2.0
 
-description: Microchip MEC5 I2C using HW network layer and HAL DMA
+description: Microchip MEC5 I2C using HW network layer and Zephyr DMA driver
 
 compatible: "microchip,mec5-i2c-nl"
 
@@ -20,16 +20,6 @@ properties:
   port_sel:
     type: int
     description: Port MUX number matching pinctrl-0 pins
-    required: true
-
-  scl-gpios:
-    type: phandle-array
-    description: I2C clock line gpio handle and flags
-    required: true
-
-  sda-gpios:
-    type: phandle-array
-    description: I2C data line gpio handle and flags
     required: true
 
   dmas:
