@@ -1,0 +1,20 @@
+# This file is provided so that the application can be compiled using Twister,
+# the Zephyr testing tool. In this file, multiple combinations can be specified,
+# so that you can easily test all of them locally or in CI.
+sample:
+  description: Example I2C application
+  name: example-i2c-application
+common:
+  build_only: true
+  platform_allow:
+    - mec_assy6906_mech1723nlj
+    - mec_assy6906_mech1723nsz
+    - mec_assy6941_mec1743qlj
+    - mec_assy6941_mec1743qsz
+    - mec_assy6941_mec1753qlj
+    - mec_assy6941_mec1753qsz
+tests:
+  app.default: {}
+  app.debug:
+    extra_overlay_confs:
+      - debug.conf
