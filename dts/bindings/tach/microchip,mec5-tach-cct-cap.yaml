@@ -1,0 +1,124 @@
+# Copyright (c) 2025, Microchip Technology Inc.
+# SPDX-License-Identifier: Apache-2.0
+
+description: |
+  Microchip MEC5 HAL based tachometer using capture compare timer capture units
+
+compatible: "microchip,mec5-tach-cct-cap"
+
+# NOTE: tach.yaml defines bus tach
+
+include: [tach.yaml, pinctrl-device.yaml]
+
+properties:
+  reg:
+    required: true
+
+  interrupts:
+    required: true
+
+  interrupt-names:
+    required: true
+
+  pinctrl-0:
+    required: true
+
+  pinctrl-names:
+    required: true
+
+  freerun-clk:
+    required: true
+    type: string
+    enum:
+      - "48M"
+      - "24M"
+      - "12M"
+      - "6M"
+      - "3M"
+      - "1500K"
+      - "750K"
+      - "375K"
+
+child-binding:
+  description: Capture units configurations.
+
+  properties:
+    reg:
+      type: int
+      required: true
+      enum:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+
+      description: |
+        Capture counter ID in [0, 5]
+
+    edge-detect:
+      type: string
+      enum:
+        - "falling edges"
+        - "rising edges"
+        - "both edges"
+
+      description: |
+        Capture unit will store the current freerun counter value when the trigger
+        input edge event occurs. Sofware must read this value before the next edge
+        or it will be overwritten. If this property is not present edge detection
+        will be disabled resulting in the capture register not updated.
+
+    filter-clk:
+      type: string
+      required: true
+      enum:
+        - "48M"
+        - "24M"
+        - "12M"
+        - "6M"
+        - "3M"
+        - "1500K"
+        - "750K"
+        - "375K"
+
+      description: |
+        Enable input signal filter. The input signal must remain stable for three
+        clocks of the selected frequency before an edge will be registered.
+        Choose filter clock to be at least 4X the duration of the input signal pulse
+        width.
+
+    filter-bypass:
+      type: boolean
+      description: |
+        Bypass the input filter. When bypass is enabled the filter clock must
+        be at least 2X the duration of the input signal pulse to be reliably
+        detected.
+
+    input-mux:
+      type: int
+      required: true
+      enum:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+
+      description: |
+        Select one of 16 input signals to capture edges. Multiple capture
+        units can be connected to the same signal. Please refer the chip
+        documentation for the pins connected to CCT capture inputs. These pins
+        must be present in the pinctrl-0 list for this device.

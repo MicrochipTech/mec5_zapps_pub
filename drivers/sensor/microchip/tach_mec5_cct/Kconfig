@@ -1,0 +1,16 @@
+# Microchip MEC5 HAL based input capture compare timer as a tachometer sensor
+
+# Copyright (c) 2025 Microchip Technology Inc.
+# SPDX-License-Identifier: Apache-2.0
+
+config TACH_MCHP_MEC5_CCT_CAP
+	bool "Microchip MEC5 HAL based CCT capture"
+	default y
+	depends on DT_HAS_MICROCHIP_MEC5_TACH_CCT_CAP_ENABLED
+	depends on SOC_FAMILY_MICROCHIP_MEC
+	depends on HAS_MEC5_HAL
+	select PINCTRL
+	select EVENTS
+	help
+	  Enable the Microchip MEC5 HAL based CCT capture hardware for
+	  use as a tachometer.

@@ -3,7 +3,7 @@
 
 menu "Drivers"
 rsource "blink/Kconfig"
-rsource "sensor/Kconfig"
 rsource "flash/Kconfig"
 rsource "i2c/Kconfig"
+rsource "sensor/Kconfig"
 endmenu
