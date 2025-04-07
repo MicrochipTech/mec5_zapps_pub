@@ -1,0 +1,488 @@
+**** Booting Zephyr OS build v1.14.0-rc1-85437-gf6462b542d0c ***
+[00:00:00.004,241]  [0m<inf> main: app_tach_icct sample: board: microchip,mec_assy6941_mec1753qlj [0m
+[00:00:00.013,153]  [0m<inf> main: PWM cycles per second = 48000000 [0m
+[00:00:00.019,500]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 12800  duty_cycle = 20 [0m
+[00:00:00.029,113]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:00:02.070,129]  [0m<inf> main: Sensor value: v1 = 2160(0x870),  v2 = 672076(0xa414c) [0m
+[00:00:02.076,843]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 16000  duty_cycle = 25 [0m
+[00:00:02.086,456]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:00:04.142,181]  [0m<inf> main: Sensor value: v1 = 1620(0x654),  v2 = 435709(0x6a5fd) [0m
+[00:00:04.148,895]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 19200  duty_cycle = 30 [0m
+[00:00:04.158,508]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:00:06.211,975]  [0m<inf> main: Sensor value: v1 = 1740(0x6cc),  v2 = 717402(0xaf25a) [0m
+[00:00:06.218,658]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 25600  duty_cycle = 40 [0m
+[00:00:06.228,271]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:00:08.264,739]  [0m<inf> main: Sensor value: v1 = 2220(0x8ac),  v2 = 883221(0xd7a15) [0m
+[00:00:08.271,453]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 32000  duty_cycle = 50 [0m
+[00:00:08.281,066]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:00:10.314,483]  [0m<inf> main: Sensor value: v1 = 2760(0xac8),  v2 = 559629(0x88a0d) [0m
+[00:00:10.321,197]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 38400  duty_cycle = 60 [0m
+[00:00:10.330,810]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:00:12.365,814]  [0m<inf> main: Sensor value: v1 = 3240(0xca8),  v2 = 349060(0x55384) [0m
+[00:00:12.372,497]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 44800  duty_cycle = 70 [0m
+[00:00:12.382,141]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:00:14.413,818]  [0m<inf> main: Sensor value: v1 = 3660(0xe4c),  v2 = 843630(0xcdf6e) [0m
+[00:00:14.420,532]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 51200  duty_cycle = 80 [0m
+[00:00:14.430,145]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:00:16.458,312]  [0m<inf> main: Sensor value: v1 = 4140(0x102c),  v2 = 347011(0x54b83) [0m
+[00:00:16.465,118]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 57600  duty_cycle = 90 [0m
+[00:00:16.474,731]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:00:18.497,955]  [0m<inf> main: Sensor value: v1 = 4500(0x1194),  v2 = 524445(0x8009d) [0m
+[00:00:18.504,760]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 60800  duty_cycle = 95 [0m
+[00:00:18.514,373]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:00:20.539,093]  [0m<inf> main: Sensor value: v1 = 4740(0x1284),  v2 = 180588(0x2c16c) [0m
+[00:00:20.545,867]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 64000  duty_cycle = 100 [0m
+[00:00:20.555,572]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:00:22.575,500]  [0m<inf> main: Sensor value: v1 = 4920(0x1338),  v2 = 17889(0x45e1) [0m
+[00:00:22.582,122]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 60800  duty_cycle = 95 [0m
+[00:00:22.591,735]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:00:24.617,706]  [0m<inf> main: Sensor value: v1 = 4800(0x12c0),  v2 = 148473(0x243f9) [0m
+[00:00:24.624,511]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 57600  duty_cycle = 90 [0m
+[00:00:24.634,124]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:00:26.660,064]  [0m<inf> main: Sensor value: v1 = 4560(0x11d0),  v2 = 787434(0xc03ea) [0m
+[00:00:26.666,870]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 51200  duty_cycle = 80 [0m
+[00:00:26.676,483]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:00:28.701,293]  [0m<inf> main: Sensor value: v1 = 4200(0x1068),  v2 = 625658(0x98bfa) [0m
+[00:00:28.708,099]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 44800  duty_cycle = 70 [0m
+[00:00:28.717,712]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:00:30.741,210]  [0m<inf> main: Sensor value: v1 = 3840(0xf00),  v2 = 185931(0x2d64b) [0m
+[00:00:30.747,924]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 38400  duty_cycle = 60 [0m
+[00:00:30.757,537]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:00:32.784,515]  [0m<inf> main: Sensor value: v1 = 3420(0xd5c),  v2 = 276425(0x437c9) [0m
+[00:00:32.791,229]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 32000  duty_cycle = 50 [0m
+[00:00:32.800,842]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:00:34.836,700]  [0m<inf> main: Sensor value: v1 = 2940(0xb7c),  v2 = 471236(0x730c4) [0m
+[00:00:34.843,414]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 25600  duty_cycle = 40 [0m
+[00:00:34.853,027]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:00:36.896,545]  [0m<inf> main: Sensor value: v1 = 2460(0x99c),  v2 = 450461(0x6df9d) [0m
+[00:00:36.903,259]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 19200  duty_cycle = 30 [0m
+[00:00:36.912,872]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:00:38.965,332]  [0m<inf> main: Sensor value: v1 = 1920(0x780),  v2 = 639208(0x9c0e8) [0m
+[00:00:38.972,045]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 16000  duty_cycle = 25 [0m
+[00:00:38.981,658]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:00:41.027,709]  [0m<inf> main: Sensor value: v1 = 1560(0x618),  v2 = 481507(0x758e3) [0m
+[00:00:41.034,423]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 12800  duty_cycle = 20 [0m
+[00:00:41.044,036]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:00:43.122,650]  [0m<inf> main: Sensor value: v1 = 1260(0x4ec),  v2 = 110148(0x1ae44) [0m
+[00:00:43.129,333]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 16000  duty_cycle = 25 [0m
+[00:00:43.138,946]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:00:45.190,582]  [0m<inf> main: Sensor value: v1 = 1380(0x564),  v2 = 912305(0xdebb1) [0m
+[00:00:45.197,296]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 19200  duty_cycle = 30 [0m
+[00:00:45.206,909]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:00:47.255,828]  [0m<inf> main: Sensor value: v1 = 1680(0x690),  v2 = 855052(0xd0c0c) [0m
+[00:00:47.262,542]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 25600  duty_cycle = 40 [0m
+[00:00:47.272,155]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:00:49.315,429]  [0m<inf> main: Sensor value: v1 = 2220(0x8ac),  v2 = 328497(0x50331) [0m
+[00:00:49.322,143]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 32000  duty_cycle = 50 [0m
+[00:00:49.331,756]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:00:51.368,957]  [0m<inf> main: Sensor value: v1 = 2760(0xac8),  v2 = 39968(0x9c20) [0m
+[00:00:51.375,488]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 38400  duty_cycle = 60 [0m
+[00:00:51.385,101]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:00:53.420,440]  [0m<inf> main: Sensor value: v1 = 3180(0xc6c),  v2 = 778707(0xbe1d3) [0m
+[00:00:53.427,154]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 44800  duty_cycle = 70 [0m
+[00:00:53.436,767]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:00:55.467,742]  [0m<inf> main: Sensor value: v1 = 3600(0xe10),  v2 = 935087(0xe44af) [0m
+[00:00:55.474,456]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 51200  duty_cycle = 80 [0m
+[00:00:55.484,069]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:00:57.510,589]  [0m<inf> main: Sensor value: v1 = 4020(0xfb4),  v2 = 904373(0xdccb5) [0m
+[00:00:57.517,303]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 57600  duty_cycle = 90 [0m
+[00:00:57.526,916]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:00:59.554,077]  [0m<inf> main: Sensor value: v1 = 4440(0x1158),  v2 = 660708(0xa14e4) [0m
+[00:00:59.560,882]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 60800  duty_cycle = 95 [0m
+[00:00:59.570,495]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:01:01.592,437]  [0m<inf> main: Sensor value: v1 = 4680(0x1248),  v2 = 93384(0x16cc8) [0m
+[00:01:01.599,151]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 64000  duty_cycle = 100 [0m
+[00:01:01.608,856]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:01:03.629,089]  [0m<inf> main: Sensor value: v1 = 4860(0x12fc),  v2 = 135928(0x212f8) [0m
+[00:01:03.635,894]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 60800  duty_cycle = 95 [0m
+[00:01:03.645,507]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:01:05.671,051]  [0m<inf> main: Sensor value: v1 = 4680(0x1248),  v2 = 354198(0x56796) [0m
+[00:01:05.677,856]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 57600  duty_cycle = 90 [0m
+[00:01:05.687,469]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:01:07.711,334]  [0m<inf> main: Sensor value: v1 = 4500(0x1194),  v2 = 251917(0x3d80d) [0m
+[00:01:07.718,139]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 51200  duty_cycle = 80 [0m
+[00:01:07.727,752]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:01:09.751,586]  [0m<inf> main: Sensor value: v1 = 4140(0x102c),  v2 = 649387(0x9e8ab) [0m
+[00:01:09.758,392]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 44800  duty_cycle = 70 [0m
+[00:01:09.768,005]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:01:11.792,083]  [0m<inf> main: Sensor value: v1 = 3780(0xec4),  v2 = 915439(0xdf7ef) [0m
+[00:01:11.798,797]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 38400  duty_cycle = 60 [0m
+[00:01:11.808,410]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:01:13.838,958]  [0m<inf> main: Sensor value: v1 = 3360(0xd20),  v2 = 430453(0x69175) [0m
+[00:01:13.845,672]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 32000  duty_cycle = 50 [0m
+[00:01:13.855,285]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:01:15.892,608]  [0m<inf> main: Sensor value: v1 = 2880(0xb40),  v2 = 634778(0x9af9a) [0m
+[00:01:15.899,322]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 25600  duty_cycle = 40 [0m
+[00:01:15.908,935]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:01:17.950,958]  [0m<inf> main: Sensor value: v1 = 2400(0x960),  v2 = 570156(0x8b32c) [0m
+[00:01:17.957,672]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 19200  duty_cycle = 30 [0m
+[00:01:17.967,285]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:01:20.007,904]  [0m<inf> main: Sensor value: v1 = 1860(0x744),  v2 = 870216(0xd4748) [0m
+[00:01:20.014,587]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 16000  duty_cycle = 25 [0m
+[00:01:20.024,230]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:01:22.081,420]  [0m<inf> main: Sensor value: v1 = 1500(0x5dc),  v2 = 943422(0xe653e) [0m
+[00:01:22.088,134]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 12800  duty_cycle = 20 [0m
+[00:01:22.097,747]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:01:24.164,672]  [0m<inf> main: Sensor value: v1 = 1200(0x4b0),  v2 = 820065(0xc8361) [0m
+[00:01:24.171,386]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 16000  duty_cycle = 25 [0m
+[00:01:24.180,999]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:01:26.236,175]  [0m<inf> main: Sensor value: v1 = 1380(0x564),  v2 = 615197(0x9631d) [0m
+[00:01:26.242,889]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 19200  duty_cycle = 30 [0m
+[00:01:26.252,502]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:01:28.300,445]  [0m<inf> main: Sensor value: v1 = 1680(0x690),  v2 = 533721(0x824d9) [0m
+[00:01:28.307,159]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 25600  duty_cycle = 40 [0m
+[00:01:28.316,772]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:01:30.352,752]  [0m<inf> main: Sensor value: v1 = 2160(0x870),  v2 = 910066(0xde2f2) [0m
+[00:01:30.359,466]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 32000  duty_cycle = 50 [0m
+[00:01:30.369,079]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:01:32.401,519]  [0m<inf> main: Sensor value: v1 = 2700(0xa8c),  v2 = 542828(0x8486c) [0m
+[00:01:32.408,203]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 38400  duty_cycle = 60 [0m
+[00:01:32.417,846]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:01:34.445,983]  [0m<inf> main: Sensor value: v1 = 3180(0xc6c),  v2 = 278741(0x440d5) [0m
+[00:01:34.452,697]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 44800  duty_cycle = 70 [0m
+[00:01:34.462,310]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:01:36.491,790]  [0m<inf> main: Sensor value: v1 = 3600(0xe10),  v2 = 617743(0x96d0f) [0m
+[00:01:36.498,504]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 51200  duty_cycle = 80 [0m
+[00:01:36.508,117]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:01:38.536,834]  [0m<inf> main: Sensor value: v1 = 4020(0xfb4),  v2 = 495347(0x78ef3) [0m
+[00:01:38.543,518]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 57600  duty_cycle = 90 [0m
+[00:01:38.553,131]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:01:40.576,538]  [0m<inf> main: Sensor value: v1 = 4440(0x1158),  v2 = 291301(0x471e5) [0m
+[00:01:40.583,343]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 60800  duty_cycle = 95 [0m
+[00:01:40.592,956]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:01:42.619,598]  [0m<inf> main: Sensor value: v1 = 4680(0x1248),  v2 = 93384(0x16cc8) [0m
+[00:01:42.626,312]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 64000  duty_cycle = 100 [0m
+[00:01:42.636,016]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:01:44.659,271]  [0m<inf> main: Sensor value: v1 = 4860(0x12fc),  v2 = 153469(0x2577d) [0m
+[00:01:44.666,046]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 60800  duty_cycle = 95 [0m
+[00:01:44.675,659]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:01:46.700,775]  [0m<inf> main: Sensor value: v1 = 4680(0x1248),  v2 = 505777(0x7b7b1) [0m
+[00:01:46.707,580]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 57600  duty_cycle = 90 [0m
+[00:01:46.717,193]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:01:48.744,079]  [0m<inf> main: Sensor value: v1 = 4500(0x1194),  v2 = 33806(0x840e) [0m
+[00:01:48.750,732]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 51200  duty_cycle = 80 [0m
+[00:01:48.760,345]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:01:50.786,376]  [0m<inf> main: Sensor value: v1 = 4140(0x102c),  v2 = 559042(0x887c2) [0m
+[00:01:50.793,182]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 44800  duty_cycle = 70 [0m
+[00:01:50.802,795]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:01:52.832,244]  [0m<inf> main: Sensor value: v1 = 3720(0xe88),  v2 = 698409(0xaa829) [0m
+[00:01:52.838,958]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 38400  duty_cycle = 60 [0m
+[00:01:52.848,571]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:01:54.874,542]  [0m<inf> main: Sensor value: v1 = 3360(0xd20),  v2 = 24084(0x5e14) [0m
+[00:01:54.881,072]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 32000  duty_cycle = 50 [0m
+[00:01:54.890,686]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:01:56.926,788]  [0m<inf> main: Sensor value: v1 = 2880(0xb40),  v2 = 534166(0x82696) [0m
+[00:01:56.933,502]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 25600  duty_cycle = 40 [0m
+[00:01:56.943,115]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:01:58.986,541]  [0m<inf> main: Sensor value: v1 = 2400(0x960),  v2 = 358603(0x578cb) [0m
+[00:01:58.993,255]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 19200  duty_cycle = 30 [0m
+[00:01:59.002,868]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:02:01.057,403]  [0m<inf> main: Sensor value: v1 = 1860(0x744),  v2 = 649870(0x9ea8e) [0m
+[00:02:01.064,117]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 16000  duty_cycle = 25 [0m
+[00:02:01.073,730]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:02:03.126,434]  [0m<inf> main: Sensor value: v1 = 1500(0x5dc),  v2 = 825619(0xc9913) [0m
+[00:02:03.133,148]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 12800  duty_cycle = 20 [0m
+[00:02:03.142,761]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:02:05.202,026]  [0m<inf> main: Sensor value: v1 = 1200(0x4b0),  v2 = 688107(0xa7feb) [0m
+[00:02:05.208,740]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 16000  duty_cycle = 25 [0m
+[00:02:05.218,353]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:02:07.285,888]  [0m<inf> main: Sensor value: v1 = 1380(0x564),  v2 = 491426(0x77fa2) [0m
+[00:02:07.292,602]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 19200  duty_cycle = 30 [0m
+[00:02:07.302,215]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:02:09.348,480]  [0m<inf> main: Sensor value: v1 = 1680(0x690),  v2 = 217347(0x35103) [0m
+[00:02:09.355,194]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 25600  duty_cycle = 40 [0m
+[00:02:09.364,807]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:02:11.411,743]  [0m<inf> main: Sensor value: v1 = 2160(0x870),  v2 = 853897(0xd0789) [0m
+[00:02:11.418,426]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 32000  duty_cycle = 50 [0m
+[00:02:11.428,039]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:02:13.460,723]  [0m<inf> main: Sensor value: v1 = 2700(0xa8c),  v2 = 444960(0x6ca20) [0m
+[00:02:13.467,437]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 38400  duty_cycle = 60 [0m
+[00:02:13.477,050]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:02:15.512,695]  [0m<inf> main: Sensor value: v1 = 3180(0xc6c),  v2 = 148614(0x24486) [0m
+[00:02:15.519,409]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 44800  duty_cycle = 70 [0m
+[00:02:15.529,022]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:02:17.560,363]  [0m<inf> main: Sensor value: v1 = 3600(0xe10),  v2 = 376432(0x5be70) [0m
+[00:02:17.567,077]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 51200  duty_cycle = 80 [0m
+[00:02:17.576,690]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:02:19.600,646]  [0m<inf> main: Sensor value: v1 = 4020(0xfb4),  v2 = 507485(0x7be5d) [0m
+[00:02:19.607,360]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 57600  duty_cycle = 90 [0m
+[00:02:19.616,973]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:02:21.642,120]  [0m<inf> main: Sensor value: v1 = 4440(0x1158),  v2 = 64100(0xfa64) [0m
+[00:02:21.648,742]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 60800  duty_cycle = 95 [0m
+[00:02:21.658,355]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:02:23.679,351]  [0m<inf> main: Sensor value: v1 = 4620(0x120c),  v2 = 572923(0x8bdfb) [0m
+[00:02:23.686,157]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 64000  duty_cycle = 100 [0m
+[00:02:23.695,861]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:02:25.716,186]  [0m<inf> main: Sensor value: v1 = 4860(0x12fc),  v2 = 153469(0x2577d) [0m
+[00:02:25.722,991]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 60800  duty_cycle = 95 [0m
+[00:02:25.732,604]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:02:27.756,469]  [0m<inf> main: Sensor value: v1 = 4680(0x1248),  v2 = 386922(0x5e76a) [0m
+[00:02:27.763,244]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 57600  duty_cycle = 90 [0m
+[00:02:27.772,857]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:02:29.797,729]  [0m<inf> main: Sensor value: v1 = 4500(0x1194),  v2 = 278326(0x43f36) [0m
+[00:02:29.804,534]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 51200  duty_cycle = 80 [0m
+[00:02:29.814,147]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:02:31.840,179]  [0m<inf> main: Sensor value: v1 = 4140(0x102c),  v2 = 652618(0x9f54a) [0m
+[00:02:31.846,984]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 44800  duty_cycle = 70 [0m
+[00:02:31.856,597]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:02:33.881,561]  [0m<inf> main: Sensor value: v1 = 3720(0xe88),  v2 = 693173(0xa93b5) [0m
+[00:02:33.888,244]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 38400  duty_cycle = 60 [0m
+[00:02:33.897,857]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:02:35.931,976]  [0m<inf> main: Sensor value: v1 = 3300(0xce4),  v2 = 604988(0x93b3c) [0m
+[00:02:35.938,690]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 32000  duty_cycle = 50 [0m
+[00:02:35.948,303]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:02:37.978,759]  [0m<inf> main: Sensor value: v1 = 2880(0xb40),  v2 = 331074(0x50d42) [0m
+[00:02:37.985,473]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 25600  duty_cycle = 40 [0m
+[00:02:37.995,086]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:02:40.027,984]  [0m<inf> main: Sensor value: v1 = 2400(0x960),  v2 = 221304(0x36078) [0m
+[00:02:40.034,698]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 19200  duty_cycle = 30 [0m
+[00:02:40.044,311]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:02:42.092,224]  [0m<inf> main: Sensor value: v1 = 1860(0x744),  v2 = 519648(0x7ede0) [0m
+[00:02:42.098,937]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 16000  duty_cycle = 25 [0m
+[00:02:42.108,551]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:02:44.172,271]  [0m<inf> main: Sensor value: v1 = 1500(0x5dc),  v2 = 627703(0x993f7) [0m
+[00:02:44.178,985]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 12800  duty_cycle = 20 [0m
+[00:02:44.188,598]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:02:46.262,817]  [0m<inf> main: Sensor value: v1 = 1200(0x4b0),  v2 = 544310(0x84e36) [0m
+[00:02:46.269,531]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 16000  duty_cycle = 25 [0m
+[00:02:46.279,144]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:02:48.336,212]  [0m<inf> main: Sensor value: v1 = 1380(0x564),  v2 = 374402(0x5b682) [0m
+[00:02:48.342,926]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 19200  duty_cycle = 30 [0m
+[00:02:48.352,539]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:02:50.409,881]  [0m<inf> main: Sensor value: v1 = 1680(0x690),  v2 = 214166(0x34496) [0m
+[00:02:50.416,595]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 25600  duty_cycle = 40 [0m
+[00:02:50.426,208]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:02:52.471,221]  [0m<inf> main: Sensor value: v1 = 2160(0x870),  v2 = 497362(0x796d2) [0m
+[00:02:52.477,935]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 32000  duty_cycle = 50 [0m
+[00:02:52.487,548]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:02:54.528,076]  [0m<inf> main: Sensor value: v1 = 2700(0xa8c),  v2 = 46846(0xb6fe) [0m
+[00:02:54.534,606]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 38400  duty_cycle = 60 [0m
+[00:02:54.544,219]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:02:56.574,310]  [0m<inf> main: Sensor value: v1 = 3180(0xc6c),  v2 = 32229(0x7de5) [0m
+[00:02:56.580,871]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 44800  duty_cycle = 70 [0m
+[00:02:56.590,484]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:02:58.615,295]  [0m<inf> main: Sensor value: v1 = 3600(0xe10),  v2 = 466394(0x71dda) [0m
+[00:02:58.622,009]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 51200  duty_cycle = 80 [0m
+[00:02:58.631,622]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:03:00.656,219]  [0m<inf> main: Sensor value: v1 = 4020(0xfb4),  v2 = 118211(0x1cdc3) [0m
+[00:03:00.662,933]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 57600  duty_cycle = 90 [0m
+[00:03:00.672,546]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:03:02.697,814]  [0m<inf> main: Sensor value: v1 = 4380(0x111c),  v2 = 599406(0x9256e) [0m
+[00:03:02.704,620]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 60800  duty_cycle = 95 [0m
+[00:03:02.714,233]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:03:04.738,281]  [0m<inf> main: Sensor value: v1 = 4620(0x120c),  v2 = 305333(0x4a8b5) [0m
+[00:03:04.745,086]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 64000  duty_cycle = 100 [0m
+[00:03:04.754,791]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:03:06.777,954]  [0m<inf> main: Sensor value: v1 = 4800(0x12c0),  v2 = 436144(0x6a7b0) [0m
+[00:03:06.784,759]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 60800  duty_cycle = 95 [0m
+[00:03:06.794,372]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:03:08.820,800]  [0m<inf> main: Sensor value: v1 = 4620(0x120c),  v2 = 568915(0x8ae53) [0m
+[00:03:08.827,606]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 57600  duty_cycle = 90 [0m
+[00:03:08.837,219]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:03:10.859,436]  [0m<inf> main: Sensor value: v1 = 4440(0x1158),  v2 = 545799(0x85407) [0m
+[00:03:10.866,210]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 51200  duty_cycle = 80 [0m
+[00:03:10.875,823]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:03:12.904,205]  [0m<inf> main: Sensor value: v1 = 4080(0xff0),  v2 = 718604(0xaf70c) [0m
+[00:03:12.910,919]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 44800  duty_cycle = 70 [0m
+[00:03:12.920,532]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:03:14.946,441]  [0m<inf> main: Sensor value: v1 = 3660(0xe4c),  v2 = 940575(0xe5a1f) [0m
+[00:03:14.953,155]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 38400  duty_cycle = 60 [0m
+[00:03:14.962,768]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:03:16.992,584]  [0m<inf> main: Sensor value: v1 = 3300(0xce4),  v2 = 78738(0x13392) [0m
+[00:03:16.999,206]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 32000  duty_cycle = 50 [0m
+[00:03:17.008,819]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:03:19.043,029]  [0m<inf> main: Sensor value: v1 = 2820(0xb04),  v2 = 980491(0xef60b) [0m
+[00:03:19.049,743]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 25600  duty_cycle = 40 [0m
+[00:03:19.059,356]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:03:21.092,590]  [0m<inf> main: Sensor value: v1 = 2400(0x960),  v2 = 148172(0x242cc) [0m
+[00:03:21.099,304]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 19200  duty_cycle = 30 [0m
+[00:03:21.108,917]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:03:23.154,937]  [0m<inf> main: Sensor value: v1 = 1860(0x744),  v2 = 387869(0x5eb1d) [0m
+[00:03:23.161,651]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 16000  duty_cycle = 25 [0m
+[00:03:23.171,264]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:03:25.230,621]  [0m<inf> main: Sensor value: v1 = 1500(0x5dc),  v2 = 513610(0x7d64a) [0m
+[00:03:25.237,335]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 12800  duty_cycle = 20 [0m
+[00:03:25.246,948]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:03:27.309,417]  [0m<inf> main: Sensor value: v1 = 1200(0x4b0),  v2 = 452801(0x6e8c1) [0m
+[00:03:27.316,131]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 16000  duty_cycle = 25 [0m
+[00:03:27.325,744]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:03:29.385,772]  [0m<inf> main: Sensor value: v1 = 1380(0x564),  v2 = 328281(0x50259) [0m
+[00:03:29.392,486]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 19200  duty_cycle = 30 [0m
+[00:03:29.402,099]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:03:31.458,679]  [0m<inf> main: Sensor value: v1 = 1680(0x690),  v2 = 79619(0x13703) [0m
+[00:03:31.465,301]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 25600  duty_cycle = 40 [0m
+[00:03:31.474,914]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:03:33.515,350]  [0m<inf> main: Sensor value: v1 = 2160(0x870),  v2 = 680139(0xa60cb) [0m
+[00:03:33.522,064]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 32000  duty_cycle = 50 [0m
+[00:03:33.531,677]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:03:35.568,695]  [0m<inf> main: Sensor value: v1 = 2700(0xa8c),  v2 = 52253(0xcc1d) [0m
+[00:03:35.575,225]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 38400  duty_cycle = 60 [0m
+[00:03:35.584,838]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:03:37.620,758]  [0m<inf> main: Sensor value: v1 = 3120(0xc30),  v2 = 795411(0xc2313) [0m
+[00:03:37.627,471]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 44800  duty_cycle = 70 [0m
+[00:03:37.637,084]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:03:39.666,198]  [0m<inf> main: Sensor value: v1 = 3600(0xe10),  v2 = 139444(0x220b4) [0m
+[00:03:39.672,882]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 51200  duty_cycle = 80 [0m
+[00:03:39.682,495]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:03:41.710,388]  [0m<inf> main: Sensor value: v1 = 4020(0xfb4),  v2 = 112211(0x1b653) [0m
+[00:03:41.717,102]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 57600  duty_cycle = 90 [0m
+[00:03:41.726,715]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:03:43.749,694]  [0m<inf> main: Sensor value: v1 = 4380(0x111c),  v2 = 347735(0x54e57) [0m
+[00:03:43.756,500]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 60800  duty_cycle = 95 [0m
+[00:03:43.766,113]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:03:45.786,743]  [0m<inf> main: Sensor value: v1 = 4620(0x120c),  v2 = 51444(0xc8f4) [0m
+[00:03:45.793,365]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 64000  duty_cycle = 100 [0m
+[00:03:45.803,070]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:03:47.829,223]  [0m<inf> main: Sensor value: v1 = 4800(0x12c0),  v2 = 16067(0x3ec3) [0m
+[00:03:47.835,845]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 60800  duty_cycle = 95 [0m
+[00:03:47.845,458]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:03:49.867,279]  [0m<inf> main: Sensor value: v1 = 4620(0x120c),  v2 = 701381(0xab3c5) [0m
+[00:03:49.874,084]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 57600  duty_cycle = 90 [0m
+[00:03:49.883,697]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:03:51.905,639]  [0m<inf> main: Sensor value: v1 = 4500(0x1194),  v2 = 30057(0x7569) [0m
+[00:03:51.912,261]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 51200  duty_cycle = 80 [0m
+[00:03:51.921,875]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:03:53.950,744]  [0m<inf> main: Sensor value: v1 = 4080(0xff0),  v2 = 731186(0xb2832) [0m
+[00:03:53.957,458]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 44800  duty_cycle = 70 [0m
+[00:03:53.967,071]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:03:55.998,077]  [0m<inf> main: Sensor value: v1 = 3720(0xe88),  v2 = 448074(0x6d64a) [0m
+[00:03:56.004,791]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 38400  duty_cycle = 60 [0m
+[00:03:56.014,404]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:03:58.045,227]  [0m<inf> main: Sensor value: v1 = 3300(0xce4),  v2 = 485809(0x769b1) [0m
+[00:03:58.051,910]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 32000  duty_cycle = 50 [0m
+[00:03:58.061,553]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:04:00.091,735]  [0m<inf> main: Sensor value: v1 = 2880(0xb40),  v2 = 131218(0x20092) [0m
+[00:04:00.098,449]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 25600  duty_cycle = 40 [0m
+[00:04:00.108,062]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:04:02.146,362]  [0m<inf> main: Sensor value: v1 = 2400(0x960),  v2 = 86005(0x14ff5) [0m
+[00:04:02.152,984]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 19200  duty_cycle = 30 [0m
+[00:04:02.162,597]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:04:04.209,350]  [0m<inf> main: Sensor value: v1 = 1860(0x744),  v2 = 395088(0x60750) [0m
+[00:04:04.216,064]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 16000  duty_cycle = 25 [0m
+[00:04:04.225,677]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:04:06.282,104]  [0m<inf> main: Sensor value: v1 = 1500(0x5dc),  v2 = 515344(0x7dd10) [0m
+[00:04:06.288,818]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 12800  duty_cycle = 20 [0m
+[00:04:06.298,431]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:04:08.358,551]  [0m<inf> main: Sensor value: v1 = 1200(0x4b0),  v2 = 435264(0x6a440) [0m
+[00:04:08.365,264]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 16000  duty_cycle = 25 [0m
+[00:04:08.374,877]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:04:10.441,650]  [0m<inf> main: Sensor value: v1 = 1380(0x564),  v2 = 231549(0x3887d) [0m
+[00:04:10.448,364]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 19200  duty_cycle = 30 [0m
+[00:04:10.457,977]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:04:12.505,279]  [0m<inf> main: Sensor value: v1 = 1680(0x690),  v2 = 112741(0x1b865) [0m
+[00:04:12.511,993]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 25600  duty_cycle = 40 [0m
+[00:04:12.521,606]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:04:14.563,659]  [0m<inf> main: Sensor value: v1 = 2160(0x870),  v2 = 613057(0x95ac1) [0m
+[00:04:14.570,373]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 32000  duty_cycle = 50 [0m
+[00:04:14.579,986]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:04:16.620,697]  [0m<inf> main: Sensor value: v1 = 2700(0xa8c),  v2 = 6339(0x18c3) [0m
+[00:04:16.627,136]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 38400  duty_cycle = 60 [0m
+[00:04:16.636,749]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:04:18.670,013]  [0m<inf> main: Sensor value: v1 = 3180(0xc6c),  v2 = 37848(0x93d8) [0m
+[00:04:18.676,544]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 44800  duty_cycle = 70 [0m
+[00:04:18.686,157]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:04:20.710,845]  [0m<inf> main: Sensor value: v1 = 3600(0xe10),  v2 = 233532(0x3903c) [0m
+[00:04:20.717,559]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 51200  duty_cycle = 80 [0m
+[00:04:20.727,172]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:04:22.754,058]  [0m<inf> main: Sensor value: v1 = 4020(0xfb4),  v2 = 313794(0x4c9c2) [0m
+[00:04:22.760,772]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 57600  duty_cycle = 90 [0m
+[00:04:22.770,385]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:04:24.792,785]  [0m<inf> main: Sensor value: v1 = 4380(0x111c),  v2 = 354902(0x56a56) [0m
+[00:04:24.799,591]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 60800  duty_cycle = 95 [0m
+[00:04:24.809,204]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:04:26.834,320]  [0m<inf> main: Sensor value: v1 = 4620(0x120c),  v2 = 63308(0xf74c) [0m
+[00:04:26.840,972]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 64000  duty_cycle = 100 [0m
+[00:04:26.850,646]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:04:28.876,251]  [0m<inf> main: Sensor value: v1 = 4800(0x12c0),  v2 = 302786(0x49ec2) [0m
+[00:04:28.883,056]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 60800  duty_cycle = 95 [0m
+[00:04:28.892,669]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:04:30.918,334]  [0m<inf> main: Sensor value: v1 = 4620(0x120c),  v2 = 321257(0x4e6e9) [0m
+[00:04:30.925,140]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 57600  duty_cycle = 90 [0m
+[00:04:30.934,753]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:04:32.959,747]  [0m<inf> main: Sensor value: v1 = 4440(0x1158),  v2 = 545799(0x85407) [0m
+[00:04:32.966,522]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 51200  duty_cycle = 80 [0m
+[00:04:32.976,135]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:04:35.005,371]  [0m<inf> main: Sensor value: v1 = 4080(0xff0),  v2 = 724894(0xb0f9e) [0m
+[00:04:35.012,084]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 44800  duty_cycle = 70 [0m
+[00:04:35.021,697]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:04:37.050,781]  [0m<inf> main: Sensor value: v1 = 3720(0xe88),  v2 = 354713(0x56999) [0m
+[00:04:37.057,495]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 38400  duty_cycle = 60 [0m
+[00:04:37.067,108]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:04:39.096,496]  [0m<inf> main: Sensor value: v1 = 3300(0xce4),  v2 = 475559(0x741a7) [0m
+[00:04:39.103,210]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 32000  duty_cycle = 50 [0m
+[00:04:39.112,823]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:04:41.144,042]  [0m<inf> main: Sensor value: v1 = 2880(0xb40),  v2 = 128133(0x1f485) [0m
+[00:04:41.150,756]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 25600  duty_cycle = 40 [0m
+[00:04:41.160,369]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:04:43.202,362]  [0m<inf> main: Sensor value: v1 = 2400(0x960),  v2 = 77445(0x12e85) [0m
+[00:04:43.208,984]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 19200  duty_cycle = 30 [0m
+[00:04:43.218,597]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:04:45.268,005]  [0m<inf> main: Sensor value: v1 = 1860(0x744),  v2 = 220790(0x35e76) [0m
+[00:04:45.274,719]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 16000  duty_cycle = 25 [0m
+[00:04:45.284,332]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:04:47.345,306]  [0m<inf> main: Sensor value: v1 = 1500(0x5dc),  v2 = 570529(0x8b4a1) [0m
+[00:04:47.352,020]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 12800  duty_cycle = 20 [0m
+[00:04:47.361,633]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:04:49.424,255]  [0m<inf> main: Sensor value: v1 = 1200(0x4b0),  v2 = 361827(0x58563) [0m
+[00:04:49.430,969]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 16000  duty_cycle = 25 [0m
+[00:04:49.440,582]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:04:51.511,657]  [0m<inf> main: Sensor value: v1 = 1380(0x564),  v2 = 138468(0x21ce4) [0m
+[00:04:51.518,371]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 19200  duty_cycle = 30 [0m
+[00:04:51.527,984]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:04:53.581,359]  [0m<inf> main: Sensor value: v1 = 1620(0x654),  v2 = 942709(0xe6275) [0m
+[00:04:53.588,073]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 25600  duty_cycle = 40 [0m
+[00:04:53.597,686]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:04:55.634,613]  [0m<inf> main: Sensor value: v1 = 2160(0x870),  v2 = 440673(0x6b961) [0m
+[00:04:55.641,326]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 32000  duty_cycle = 50 [0m
+[00:04:55.650,939]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:04:57.689,941]  [0m<inf> main: Sensor value: v1 = 2700(0xa8c),  v2 = 46846(0xb6fe) [0m
+[00:04:57.696,472]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 38400  duty_cycle = 60 [0m
+[00:04:57.706,085]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:04:59.739,746]  [0m<inf> main: Sensor value: v1 = 3120(0xc30),  v2 = 910758(0xde5a6) [0m
+[00:04:59.746,429]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 44800  duty_cycle = 70 [0m
+[00:04:59.756,042]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:05:01.788,421]  [0m<inf> main: Sensor value: v1 = 3600(0xe10),  v2 = 306108(0x4abbc) [0m
+[00:05:01.795,135]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 51200  duty_cycle = 80 [0m
+[00:05:01.804,748]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:05:03.831,085]  [0m<inf> main: Sensor value: v1 = 3960(0xf78),  v2 = 917795(0xe0123) [0m
+[00:05:03.837,799]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 57600  duty_cycle = 90 [0m
+[00:05:03.847,412]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:05:05.870,849]  [0m<inf> main: Sensor value: v1 = 4380(0x111c),  v2 = 834652(0xcbc5c) [0m
+[00:05:05.877,655]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 60800  duty_cycle = 95 [0m
+[00:05:05.887,268]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:05:07.912,750]  [0m<inf> main: Sensor value: v1 = 4620(0x120c),  v2 = 67263(0x106bf) [0m
+[00:05:07.919,464]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 64000  duty_cycle = 100 [0m
+[00:05:07.929,138]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:05:09.954,681]  [0m<inf> main: Sensor value: v1 = 4800(0x12c0),  v2 = 161310(0x2761e) [0m
+[00:05:09.961,456]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 60800  duty_cycle = 95 [0m
+[00:05:09.971,099]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:05:11.997,192]  [0m<inf> main: Sensor value: v1 = 4620(0x120c),  v2 = 846407(0xcea47) [0m
+[00:05:12.003,967]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 57600  duty_cycle = 90 [0m
+[00:05:12.013,580]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:05:14.040,130]  [0m<inf> main: Sensor value: v1 = 4440(0x1158),  v2 = 783419(0xbf43b) [0m
+[00:05:14.046,936]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 51200  duty_cycle = 80 [0m
+[00:05:14.056,549]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:05:16.083,465]  [0m<inf> main: Sensor value: v1 = 4080(0xff0),  v2 = 933132(0xe3d0c) [0m
+[00:05:16.090,179]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 44800  duty_cycle = 70 [0m
+[00:05:16.099,792]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:05:18.130,645]  [0m<inf> main: Sensor value: v1 = 3720(0xe88),  v2 = 365073(0x59211) [0m
+[00:05:18.137,359]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 38400  duty_cycle = 60 [0m
+[00:05:18.146,972]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:05:20.179,046]  [0m<inf> main: Sensor value: v1 = 3300(0xce4),  v2 = 753648(0xb7ff0) [0m
+[00:05:20.185,760]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 32000  duty_cycle = 50 [0m
+[00:05:20.195,373]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:05:22.227,294]  [0m<inf> main: Sensor value: v1 = 2880(0xb40),  v2 = 131218(0x20092) [0m
+[00:05:22.234,008]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 25600  duty_cycle = 40 [0m
+[00:05:22.243,621]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:05:24.277,343]  [0m<inf> main: Sensor value: v1 = 2340(0x924),  v2 = 872045(0xd4e6d) [0m
+[00:05:24.284,057]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 19200  duty_cycle = 30 [0m
+[00:05:24.293,670]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:05:26.349,060]  [0m<inf> main: Sensor value: v1 = 1860(0x744),  v2 = 222089(0x36389) [0m
+[00:05:26.355,773]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 16000  duty_cycle = 25 [0m
+[00:05:26.365,386]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:05:28.419,067]  [0m<inf> main: Sensor value: v1 = 1500(0x5dc),  v2 = 372201(0x5ade9) [0m
+[00:05:28.425,781]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 12800  duty_cycle = 20 [0m
+[00:05:28.435,394]  [0m<inf> main: Delay for board circuit to ramp to final value [0m
+[00:05:30.508,697]  [0m<inf> main: Sensor value: v1 = 1200(0x4b0),  v2 = 307300(0x4b064) [0m
+[00:05:30.515,411]  [0m<inf> main: Set period cycles = 64000, pulse width cycles = 16000  duty_cycle = 25 [0m
+[00:05:30.525,024]  [0m<inf> main: Delay for board circuit to ramp to final value [0m

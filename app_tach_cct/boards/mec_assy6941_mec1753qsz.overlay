@@ -1,0 +1,16 @@
+/*
+ * Copyright (c) 2025 Microchip Technology Inc.
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+#include <zephyr/dt-bindings/gpio/gpio.h>
+#include <zephyr/dt-bindings/gpio/microchip-xec-gpio.h>
+
+/ {
+	zephyr,user {
+		pinctrl-0 = <&tst_clk_out_gpio060>;
+		pinctrl-names = "default";
+	};
+};
+
+#include "mec_tach_cct.dtsi"

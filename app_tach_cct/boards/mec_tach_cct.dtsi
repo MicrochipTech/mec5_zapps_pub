@@ -1,0 +1,110 @@
+/*
+ * Copyright (c) 2025 Microchip Technology Inc.
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+#include <zephyr/dt-bindings/gpio/gpio.h>
+#include <zephyr/dt-bindings/gpio/microchip-xec-gpio.h>
+
+/*
+ * Capture Compare Timer input capture pins:
+ * ICT0  GPIO050 F1 VTR1    use for testing
+ * ICT1  GPIO051 F1 VTR1
+ * ICT2  GPIO052 F1 VTR2
+ * ICT3  GPIO016 F3 VTR2
+ * ICT4  GPIO151 F1 VTR1
+ * ICT5  GPIO140 F4(F2 MEC172x) VTR1
+ * ICT5_ALT GPIO065 F3 VTR3
+ * ICT6  GPIO100 F2 VTR3
+ * ICT7  GPIO011 F3 VTR3
+ * ICT8  GPIO063 F3 VTR3
+ * ICT9  GPIO113 F2 VTR1
+ * ICT10 GPIO015 F2 VTR2
+ * ICT11 GPIO046 F3(F1 MEC172x) VTR1
+ * ICT12 GPIO124 F3 VTR1
+ * ICT13 GPIO047 F3 VTR1
+ * ICT14 GPIO045 F3 VTR1
+ * ICT15 GPIO035 F3 VTR1
+ *
+ * MEC_ASSY6941 EVB for MEC174x/MEC175x
+ * Requires VTR1 and VTR2 both jumpered for +3.3V
+ * JP43 1-2
+ * VTR1 +3.3V JP159 1-2, JP58 1-2, JP60 1-2
+ * VTR2 +3.3V J68 1-2, JP62 1-2, JP65 1-2
+ *
+ * FAN0
+ *   JP78 2-3 select +5V on pin 2
+ *   P4(1x4) connector
+ *     1 = GND
+ *     2 = Power (+5V)
+ *     3 = FAN_TACH0
+ *     4 = FAN_PWM0 and 10:1 divider to gate of Q22
+ *
+ *   FAN_TACH0
+ *     J26(2x8) 1-2 jumper: connect GPIO050/ICT0 to FAN_TACH0
+ *
+ *   FAN_PWM0
+ *     JP79(2x12) 1-2 jumper: connect GPIO053/PWM0 to FAN_PWM0
+ *     JP76(2x17) 1-2 No jumper: 100K pull-up to VTR2
+ * 
+ * MEC_ASSY6906 EVB for MEC172x
+ *   JP40 1-2
+ *   VTR1 +3.3V JP56 1-2, JP55 1-2, JP57 1-2
+ *   VTR2 +3.3V JP60 1-2, JP61 1-2, JP59 1-2, JP62 1-2
+ *
+ *   FAN0 same as MEC_ASSY6941
+ *
+ *   FAN_TACH0
+ *     J25(2x4) 1-2 jumper: connect GPIO050/ICT0 to FAN_TACH0
+ *
+ *   FAN_PWM0 same as MEC_ASSY6941
+ */
+
+/ {
+	aliases {
+		tach-cct = &cctmr0;
+		pwm-0 = &pwm0;
+	};
+};
+
+&pwm0 {
+	compatible = "microchip,mec5-pwm";
+	pinctrl-0 = <&pwm0_gpio053>;
+	pinctrl-names = "default";
+	status = "okay";
+};
+
+&cctmr0 {
+	compatible = "microchip,mec5-tach-cct-cap";
+	interrupts = <146 3>, <147 3>, <148 3>, <149 3>,
+		     <150 3>, <151 3>, <152 3>, <153 3>,
+		     <154 3>;
+	interrupt-names = "freerun", "cap0", "cap1", "cap2",
+			  "cap3", "cap4", "cap5", "cmp0", "cmp1";
+	pinctrl-0 = <&ict0_tach0_gpio050 &ict1_tach1_gpio051>;
+	pinctrl-names = "default";
+	freerun-clk = "3M";
+	status = "okay";
+	#address-cells = <1>;
+	#size-cells = <0>;
+
+	capture0@0 {
+		reg = <0>;
+		#address-cells = <1>;
+		#size-cells = <0>;
+		input-mux = <0>;
+		edge-detect = "falling edges";
+		filter-clk = "1500K";
+		status = "okay";
+	};
+
+	capture1@1 {
+		reg = <1>;
+		#address-cells = <1>;
+		#size-cells = <0>;
+		input-mux = <1>;
+		edge-detect = "rising edges";
+		filter-clk = "3M";
+		status = "okay";
+	};
+};
