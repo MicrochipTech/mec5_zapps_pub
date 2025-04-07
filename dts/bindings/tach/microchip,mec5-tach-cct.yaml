@@ -1,0 +1,25 @@
+# Copyright (c) 2025, Microchip Technology Inc.
+# SPDX-License-Identifier: Apache-2.0
+
+description: Microchip MEC5 HAL based tachometer using capture compare timer
+
+compatible: "microchip,mec5-tach-cct"
+
+include: [tach.yaml, pinctrl-device.yaml]
+
+properties:
+  reg:
+    required: true
+
+  interrupts:
+    required: true
+
+  compare-channels:
+    type: array
+    required: true
+    description: |
+      CCT implements six comparators and HW MUX assigning any of 16 pins
+      to each comparator. This property is an array of up to six integers.
+      Position in the array specifies the comparator and the value specifies
+      the input pin [0, 15]. Any value > 15 indicates the comarator is not
+      used.
