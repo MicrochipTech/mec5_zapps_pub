@@ -1,0 +1,72 @@
+/*
+ * Copyright (c) 2025 Microchip Technology Inc.
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+#include <zephyr/dt-bindings/gpio/gpio.h>
+#include <zephyr/dt-bindings/gpio/microchip-xec-gpio.h>
+
+/*
+ * MEC5_ASSY6941 with MEC1753Q-LJ part.
+ * JP8 1-2 GPIO055 (BSS_STRAP) pulled-down via 10K to ground selects
+ *   Boot-ROM load from eSPI
+ * JP7 No jumper
+ * JP18 14-15 selects GPIO055 as SHD_nCS0
+ * JP45 1-2 connects 1.8V
+ * JP62 2-3 and JP68 3-4 VTR2 is powered by 1.8V
+ * NOTE: VTR3 is always 1.8V
+ *
+ * GPIO175/CMP_VOUT1/PWM8_ALT on schematic, LED4 on silkscreen.
+ *
+ * Capture Compare Timer input capture pins:
+ * ICT0  GPIO050 F1 VTR1    use for testing
+ * ICT1  GPIO051 F1 VTR1    use for testing
+ * ICT2  GPIO052 F1 VTR2
+ * ICT3  GPIO016 F3 VTR2
+ * ICT4  GPIO151 F1 VTR1   use for testing
+ * ICT5  GPIO140 F4 VTR1
+ * ICT5_ALT GPIO065 F3 VTR3
+ * ICT6  GPIO100 F2 VTR3
+ * ICT7  GPIO011 F3 VTR3
+ * ICT8  GPIO063 F3 VTR3
+ * ICT9  GPIO113 F2 VTR1
+ * ICT10 GPIO015 F2 VTR2
+ * ICT11 GPIO046 F3 VTR1
+ * ICT12 GPIO124 F3 VTR1
+ * ICT13 GPIO047 F3 VTR1
+ * ICT14 GPIO045 F3 VTR1
+ * ICT15 GPIO035 F3 VTR1   use for testing
+ */
+
+/ {
+	aliases {
+		i2c0 = &i2c_smb_0;
+		i2c-0 = &i2c_smb_0;
+		i2c1 = &i2c_smb_1;
+		i2c-1 = &i2c_smb_1;
+		i2c2 = &i2c_smb_2;
+		i2c-2 = &i2c_smb_2;
+	};
+
+	zephyr,user {
+		pinctrl-0 = <&tst_clk_out_gpio060>;
+		pinctrl-names = "default";
+	};
+};
+
+&cctmr0 {
+	compatible = "microchip,mec5-tach-cct";
+	pinctrl-0 = <&ict0_tach0_gpio050 &ict1_tach1_gpio051 &ict4_gpio151 &ict15_gpio035>;
+	pinctrl-names = "default";
+	compare-channels = <0 1 4 15>;
+	status = "okay";
+};
+
+/* I2C Port 0 */
+/*	drive-strength = "4x"; */
+&i2c00_scl_gpio004 {
+	drive-open-drain;
+	output-enable;
+	output-high;
+	drive-strength = "4x";
+};
