@@ -23,5 +23,5 @@ manifest:
           - cmsis      # required by the ARM port
     - name: hal_microchip
       path: modules/hal/microchip
-      remote: upstream
-      revision: master
+      remote: origin
+      revision: mec5_hal_v0p4
