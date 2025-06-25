@@ -21,7 +21,8 @@ manifest:
         # strictly needed by the application.
         name-allowlist:
           - cmsis      # required by the ARM port
+          - cmsis_6
     - name: hal_microchip
       path: modules/hal/microchip
       remote: origin
-      revision: mec5_hal_v0p4
+      revision: mec5_hal_v05
