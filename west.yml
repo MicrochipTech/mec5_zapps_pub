@@ -25,4 +25,4 @@ manifest:
     - name: hal_microchip
       path: modules/hal/microchip
       remote: origin
-      revision: mec5_hal_v05
+      revision: master
